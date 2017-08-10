@@ -1,12 +1,22 @@
-﻿<Window x:Class="BezierBorders.MainWindow"
-        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:BezierBorders"
-        mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="525">
+﻿<Window
+    x:Class="BezierBorders.MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:local="clr-namespace:BezierBorders"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    Title="MainWindow"
+    Width="550"
+    Height="350"
+    mc:Ignorable="d">
     <Grid>
-        
+        <local:AdvancedBorder
+            Width="500"
+            Height="300"
+            BorderBrush="Red"
+            BorderThickness="1,3,6,12"
+            CornerRadius="0, 5, 10, 65">
+            <Button>Hallo</Button>
+        </local:AdvancedBorder>
     </Grid>
 </Window>
